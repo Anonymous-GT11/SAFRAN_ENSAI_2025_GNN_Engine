@@ -3,9 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
 # Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -37,20 +43,16 @@ coverage.xml
 # DotEnv configuration
 .env
 
-# Pycharm
+# IDEs
 .idea
-
-# VS Code
 .vscode/
-
-# Spyder
 .spyproject/
 
 # Sphinx
 docs/build/html/.buildinfo
 docs/build/html/_sources/
 
-# Etc
+# Misc
 .cache/
 *~
 *.swp
@@ -62,5 +64,4 @@ docs/build/html/_sources/
 ~$*
 
 # Project Specific
-
-# Exceptions
+Literature/
