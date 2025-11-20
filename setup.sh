@@ -12,7 +12,7 @@ echo "========================================"
 echo "Smart Data Research Project Setup"
 echo "========================================"
 echo ""
-echo "This will install PyTorch with bundled CUDA 11.8"
+echo "This will install PyTorch with bundled CUDA 12.4"
 echo "You do NOT need to install system CUDA toolkit!"
 echo ""
 
@@ -85,8 +85,8 @@ if [ -f "requirements.txt" ]; then
 else
     echo "Warning: requirements.txt not found. Installing core packages..."
     # Install PyTorch with CUDA support
-    echo "Installing PyTorch with CUDA 11.8 support..."
-    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    echo "Installing PyTorch with CUDA 12.4 support..."
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
     
     # Install PyTorch Geometric
     echo "Installing PyTorch Geometric..."

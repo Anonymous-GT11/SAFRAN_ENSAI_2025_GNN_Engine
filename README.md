@@ -27,7 +27,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-The script installs Python 3.12.4, creates a virtual environment, and installs all dependencies including PyTorch with bundled CUDA 11.8.
+The script installs Python 3.12.4, creates a virtual environment, and installs all dependencies including PyTorch with bundled CUDA 12.4.
 
 ### 3. Activate and Verify
 
@@ -61,7 +61,7 @@ sudo ubuntu-drivers install && sudo reboot
 
 **CUDA not available in PyTorch:**
 ```bash
-pip show torch  # Should show: 2.7.1+cu118
+pip show torch  # Should show: 2.6.0+cu124
 source venv/bin/activate  # Make sure venv is active
 ```
 
@@ -72,6 +72,6 @@ source venv/bin/activate
 
 ## Notes
 
-- PyTorch includes bundled CUDA 11.8 - no separate CUDA Toolkit needed
+- PyTorch includes bundled CUDA 12.4 - no separate CUDA Toolkit needed
 - Tested on NVIDIA RTX 1000 Ada (6GB VRAM)
 - Minimum: 6GB GPU VRAM, 8GB RAM, 10GB disk space
